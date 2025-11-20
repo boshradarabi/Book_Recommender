@@ -1,0 +1,103 @@
+/* =================== راست‌چین کردن کل اپلیکیشن =================== */
+[data-testid="stAppViewContainer"] *,
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3,
+[data-testid="stAppViewContainer"] h4,
+[data-testid="stAppViewContainer"] h5,
+[data-testid="stAppViewContainer"] h6,
+[data-testid="stAppViewContainer"] p,
+[data-testid="stAppViewContainer"] span,
+[data-testid="stAppViewContainer"] div {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* =================== سایدبار =================== */
+[data-testid="stSidebar"] {
+    position: fixed !important;
+    right: 0 !important;
+    left: auto !important;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 999;
+    border-left: 1px solid #ddd;
+}
+
+[data-testid="stSidebar"] * {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* =================== فاصله برای محتوای اصلی =================== */
+[data-testid="stAppViewContainer"] {
+    margin-right: 280px !important;
+    margin-left: 0 !important;
+}
+
+/* =================== رادیو و منوهای انتخابی =================== */
+[data-testid="stRadio"] > div {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+[data-testid="stRadio"] label {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+[data-testid="stRadio"] label > div:first-child {
+    order: 1 !important;
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+}
+
+/* =================== باکس راهنما و هشدار =================== */
+.stAlert {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* =================== دکمه‌ها =================== */
+.stButton>button {
+    width: 100% !important;
+}
+
+/* =================== کارت‌ها و متریک‌ها =================== */
+.book-card,
+.metric-card {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.book-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0;
+}
+
+.metric-card {
+    background: #f0f2f6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* =================== نمودارها =================== */
+[data-testid="stPlotlyChart"] {
+    direction: rtl !important;
+}
+
+/* =================== استایل تیترها =================== */
+h1, h2, h3, h4, h5, h6 {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+
